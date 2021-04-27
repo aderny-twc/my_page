@@ -5,10 +5,15 @@ var sticky = navbar.offsetTop;
 
 function stickyNavScroll() {
   if (window.pageYOffset > sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
 }
 
 window.onscroll = function() {stickyNavScroll()};
+
+// MENU BUTTON
+
+
+
