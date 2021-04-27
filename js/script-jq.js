@@ -11,5 +11,6 @@ $(document).ready(function() {
     // NAVBAR BUTTON
     $('.nav-btn').click(function() {
         $('#menu').toggleClass('active');
+        $('.nav-btn i').toggleClass('active');
     });
 });
