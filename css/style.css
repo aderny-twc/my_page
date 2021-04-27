@@ -52,16 +52,28 @@
 }
 
 .navbar .menu li a {
-    color: var(--main-bg-color);
+    color: var(--logo-color);
     font-size: 16px;
     font-weight: 500;
     margin-left: 20px;
-    transition: color 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+.sticky .menu li a {
+    color: var(--main-bg-color);
 }
 
 .navbar .menu li a:hover {
     color: var(--accent-color);
 }
+
+/* BTN SYLES */
+.nav-btn {
+    color: var(--logo-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
 
 /* HOME STYLES */
 .home {
