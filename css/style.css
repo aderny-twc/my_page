@@ -4,6 +4,7 @@
     --main-element-color: #CF6BDD;
     --main-bg-color: #101820;
     --logo-color: #EEDAEA;
+    --accent-color: #C53562;
 }
 
 * {
@@ -23,9 +24,14 @@
 .navbar {
     position: fixed;
     width: 100%;
-    background: var(--main-element-color);
     font-family: 'Ubuntu', sans-serif;
-    padding: 10px 0;
+    padding: 25px 0;
+    transition: all 0.2s ease;
+}
+
+.sticky {
+    background: var(--main-element-color);
+    padding: 15px 0;
 }
 
 .navbar .max-width {
@@ -34,7 +40,7 @@
     justify-content: space-between;
 }
 
-.navbar .logo a{
+.navbar .logo a {
     color: var(--logo-color);
     font-size: 35px;
     font-weight: 600;
@@ -45,9 +51,50 @@
     display: inline-block;
 }
 
-.menu li a{
+.navbar .menu li a {
     color: var(--main-bg-color);
     font-size: 16px;
     font-weight: 500;
     margin-left: 20px;
+    transition: color 0.15s ease;
+}
+
+.navbar .menu li a:hover {
+    color: var(--accent-color);
+}
+
+/* HOME STYLES */
+.home {
+    display: flex;
+    background: url('/images/background_placeholder.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: var(--logo-color);
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-greeting1{
+    font-size: 27px;
+}
+
+.home .home-content .text-greeting2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;;
+}
+
+.home .home-content .text-greeting3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-greeting3 span {
+    color: var(--accent-color);
+    font-weight: 500;
 }
